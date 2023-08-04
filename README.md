@@ -4,7 +4,7 @@ This analysis looked to create a model to identify the creditworthiness of borro
 
 Given the binary outcome the model was seeking to predict (healthy or high risk), logistic regression was used for the analysis.
 
-Data overview:
+## Data overview:
 
 A data set of historical lending activity from a peer-to-peer lending services company was used to build the model.
 The dependent variable (y value) was loan status, indicating whether a loan was healthy or high risk.
@@ -20,15 +20,16 @@ Two different logistic regression models were created:
 
 The first using the original data set.
 The second using resampled training data that over-sampled high risk loans (the minority group in this data set).
-Results
-Machine Learning Model 1: Logistic Regression Model with the original data
+
+## Results
+### Machine Learning Model 1: Logistic Regression Model with the original data
 
 The model has a balanced accuracy score of 0.99, indicating it is performing well predicting whether a loan is healthy or high risk.
 The model accurately predicts healthy loans, with a precision 1.00 , recall 0.99 and f1-score of 1.00. However the model is less accurate at predicting high risk loans, with lower precision (at 0.85), recall (at 0.91), and f1-score (at 0.88).
 Precision looks at when the model predicts a high risk loan, how often it correctly does so. When this model predicts a high risk loan, it is correct 87% of the time. Indicating there are some healthy loans being incorrectly classified as high risk.
 
 
-Machine Learning Model 2: Logistic Regression model with resampled training data
+### Machine Learning Model 2: Logistic Regression model with resampled training data
 
 This is a stronger performing model, with the balanced accuracy score sitting at its maximum value of 1.00 (rounded to two decimal places).
 As with the previous model it can accurately predict healthy loans, with precision, recall, and an f1-score of 1.00.
@@ -36,7 +37,7 @@ However the model is less accurate at predicting high risk loans, with lower pre
 Precision for high risk loans remains the same as the previous model (at 0.86). Which means that some healthy loans are being classified as high risk.
 
 
-Summary
+## Summary
 While both models accurately predict healthy loans, they differ in their ability to predict high risk loans.
 
 Both models score the same on precision in predicting high risk loans (at 0.85 and 0.86), meaning some healthy loans are being predicted as high risk. Which could potentially run the risk of losing business as a result.
