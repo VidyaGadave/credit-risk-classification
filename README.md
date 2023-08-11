@@ -9,14 +9,15 @@ Given the binary outcome the model was seeking to predict (healthy or high risk)
 A data set of historical lending activity from a peer-to-peer lending services company was used to build the model.
 The dependent variable (y value) was loan status, indicating whether a loan was healthy or high risk.
 The independent variables (x values) were loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, and total debt.
-Analysis overview:
 
-The dependent variable (loan status) was removed from the independent variables.
-The data was then split into training and testing datasets.
-After which a logistic regression model was created and fitted with the training data.
-The trained model was then used to make predictions of loan status using the test data.
-The performance of the model was evaluated.
-Two different logistic regression models were created:
+
+Analysis overview:
+1. The dependent variable (loan status) was removed from the independent variables.
+2. The data was then split into training and testing datasets.
+3. After which a logistic regression model was created and fitted with the training data.
+4. The trained model was then used to make predictions of loan status using the test data.
+5. The performance of the model was evaluated.
+6. Two different logistic regression models were created:
 
 The first using the original data set.
 The second using resampled training data that over-sampled high risk loans (the minority group in this data set).
@@ -46,4 +47,4 @@ f1-score for High Risk Loans :  0.91
 While both models accurately predict healthy loans, they differ in their ability to predict high risk loans.
 Both models score the same on precision in predicting healthy loan as 100% however the precision for high risk loans are at 0.85 and 0.84.
 
-Based on the analysis undertaken, model 2 (which used resampled training data) is the strongest performing model in predicting whether a loan is healthy or high risk. Given its performance I would recommend the company use model 2. But in recommending this I would ensure they were aware the model may incorrectly classify some healthy loans as high risk, so this could be an area they monitor. 
+Based on the analysis undertaken, model 2 (which used resampled training data) is the strongest performing model in predicting whether a loan is healthy or high risk. Given its performance I would recommend the company use model 2. I would ensure they were aware the model may incorrectly classify some healthy loans as high risk, so this should be taken care of. 
