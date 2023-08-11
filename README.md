@@ -26,21 +26,21 @@ The second using resampled training data that over-sampled high risk loans (the 
 ### Machine Learning Model 1: Logistic Regression Model with the original data
 
 precision for healthy loan : 1.00       
-recall for healthy loan : 0.99
-f1-score for healthy loan : 1.00 
-precision for High Risk Loans :  0.85       
-recall for High Risk Loans : 0.91 
-f1-score for High Risk Loans :  0.88 
+recall for healthy loan : 0.99  
+f1-score for healthy loan : 1.00   
+precision for High Risk Loans :  0.85         
+recall for High Risk Loans : 0.91   
+f1-score for High Risk Loans :  0.88   
 
 
 ### Machine Learning Model 2: Logistic Regression model with resampled training data
 
 precision for healthy loan : 1.00       
-recall for healthy loan : 0.99
-f1-score for healthy loan : 1.00 
-precision for High Risk Loans :  0.84       
-recall for High Risk Loans : 0.99
-f1-score for High Risk Loans :  0.91 
+recall for healthy loan : 0.99  
+f1-score for healthy loan : 1.00   
+precision for High Risk Loans :  0.84         
+recall for High Risk Loans : 0.99  
+f1-score for High Risk Loans :  0.91   
 
 
 ## Summary
