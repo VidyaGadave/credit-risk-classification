@@ -24,23 +24,26 @@ The second using resampled training data that over-sampled high risk loans (the 
 ## Results
 ### Machine Learning Model 1: Logistic Regression Model with the original data
 
-The model has a balanced accuracy score of 0.99, indicating it is performing well predicting whether a loan is healthy or high risk.
-The model accurately predicts healthy loans, with a precision 1.00 , recall 0.99 and f1-score of 1.00. However the model is less accurate at predicting high risk loans, with lower precision (at 0.85), recall (at 0.91), and f1-score (at 0.88).
-Precision looks at when the model predicts a high risk loan, how often it correctly does so. When this model predicts a high risk loan, it is correct 87% of the time. Indicating there are some healthy loans being incorrectly classified as high risk.
+precision for healthy loan : 1.00       
+recall for healthy loan : 0.99
+f1-score for healthy loan : 1.00 
+precision for High Risk Loans :  0.85       
+recall for High Risk Loans : 0.91 
+f1-score for High Risk Loans :  0.88 
 
 
 ### Machine Learning Model 2: Logistic Regression model with resampled training data
 
-This is a stronger performing model, with the balanced accuracy score sitting at its maximum value of 1.00 (rounded to two decimal places).
-As with the previous model it can accurately predict healthy loans, with precision, recall, and an f1-score of 1.00.
-However the model is less accurate at predicting high risk loans, with lower precision (at 0.86), recall (at 0.90), and f1-score (at 0.88).
-Precision for high risk loans remains the same as the previous model (at 0.86). Which means that some healthy loans are being classified as high risk.
+precision for healthy loan : 1.00       
+recall for healthy loan : 0.99
+f1-score for healthy loan : 1.00 
+precision for High Risk Loans :  0.84       
+recall for High Risk Loans : 0.99
+f1-score for High Risk Loans :  0.91 
 
 
 ## Summary
 While both models accurately predict healthy loans, they differ in their ability to predict high risk loans.
+Both models score the same on precision in predicting healthy loan as 100% however the precision for high risk loans are at 0.85 and 0.84.
 
-Both models score the same on precision in predicting high risk loans (at 0.85 and 0.86), meaning some healthy loans are being predicted as high risk. Which could potentially run the risk of losing business as a result.
-
-Based on the analysis undertaken, model 2 (which used resampled training data) is the strongest performing model in predicting whether a loan is healthy or high risk. Given its performance I would recommend the company use model 2. But in recommending this I would ensure they were aware the model may incorrectly classify some healthy loans as high risk, so this could be an area they monitor. Future re-training of the model may also help to increase the precision in predicting high risk loans.
-
+Based on the analysis undertaken, model 2 (which used resampled training data) is the strongest performing model in predicting whether a loan is healthy or high risk. Given its performance I would recommend the company use model 2. But in recommending this I would ensure they were aware the model may incorrectly classify some healthy loans as high risk, so this could be an area they monitor. 
